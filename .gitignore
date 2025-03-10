@@ -1,0 +1,71 @@
+slides.md
+test-presentation.py
+ls/
+*/*/__pycache__
+*/*/*/__pycache__
+*/.idea
+*/.ipynb_checkpoints
+*/.mypy_cache
+*/.vscode
+*/__pycache__
+*/.pytest_cache
+*/htmlcov
+*/dist
+*/site
+*/.coverage*
+*/coverage.xml
+*/.netlify
+*/test.db
+*/log.txt
+*/Pipfile.lock
+*/env3.*
+*/.env
+*/docs_build
+*/site_build
+*/venv
+*/docs.zip
+*/archive.zip
+
+# vim temporary files
+*~
+*/.*.sw?
+*/.cache
+
+# macOS
+*/.DS_Store
+
+# Node.js dependencies
+*/node_modules/
+
+# Build output directory
+*/dist/
+
+# Caches
+*/.vite/
+
+# Environment variables file
+*/.env
+*/.env.local
+*/.env.*.local
+
+# Logs
+*.log
+*/npm-debug.log*
+*/yarn-debug.log*
+*/yarn-error.log*
+
+# IDEs and editors
+*/.idea
+*/.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Optional: Ignore all files in the public directory except .well-known
+*//public/*
+*/!/public/.well-known
+
+# System files
+*/.DS_Store
+*/Thumbs.db
