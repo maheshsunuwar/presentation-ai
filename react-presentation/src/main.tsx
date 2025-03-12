@@ -1,19 +1,22 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+import App from './pages/App.tsx'
+import { ReactDom } from 'react-dom'
 
 /* Chakra UI */
 // import { baseTheme } from '@chakra-ui/theme'
-import { extendTheme } from "@chakra-ui/react";
-import { Provider } from "@chakra-ui/react/provider"
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+// import { Provider } from "@chakra-ui/react/provider"
 
 const theme = extendTheme({  })
 
 createRoot(document.getElementById('root')!).render(
+// ReactDom.render(
   <StrictMode>
-    <Provider theme={theme}>
+    <ChakraProvider theme={theme}>
         <App />
-    </Provider>
+    </ChakraProvider>
   </StrictMode>,
+//   document.getElementById('root')
 )

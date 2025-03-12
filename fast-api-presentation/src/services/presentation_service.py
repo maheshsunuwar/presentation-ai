@@ -2,8 +2,9 @@ import litellm
 import os
 from dotenv import load_dotenv
 
-dotenv_path = './fast-api-presentation/.env'
+dotenv_path = '../.env'
 load_dotenv(dotenv_path=dotenv_path)
+print(os.getenv('OLLAMA_API_BASE'))
 
 # class PresentationSevice:
 #     def __init__():
@@ -18,6 +19,7 @@ def generate_presentation(prompt:str, num_of_slides:int):
         Generate a presentation in sli.dev format according to the prompt and
         for {num_of_slides} slides. prompt: {prompt}\
     """
+    print(os.getenv('OLLAMA_API_BASE'))
     response = litellm.completion(
         model="ollama/llama3.2",
         messages=[
